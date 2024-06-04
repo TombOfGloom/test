@@ -81,7 +81,7 @@ void aimbot() {
 					EXEC_ON_ARG(std::cout << "Distance: " << world_space_distance << '\n', false);
 					BYTE is_dying;
 					BYTE is_dbno;
-
+					
 					mem.AddScatterReadRequest(scatter_handle, i.player_pawn + offsets::pawn_to_isdying, &is_dying, sizeof(is_dying));
 					mem.AddScatterReadRequest(scatter_handle, i.player_pawn + offsets::pawn_to_isdbno, &is_dbno, sizeof(is_dbno));
 					mem.ExecuteReadScatter(scatter_handle);

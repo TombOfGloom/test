@@ -180,29 +180,29 @@ inline bool is_valid(const uintptr_t address)
 
 namespace offsets
 {
-	inline int uworld = 0x126cf528;
-	inline int uworld_to_pgamestate = 0x160;
-	inline int gamestate_to_tpplayerstate_array = 0x2a8;
-	inline int playerstate_to_ppawn = 0x308;
-	inline int playerstate_to_isabot = 0x29a;
-	inline int playerstate_to_teamid = 0x1211;
-	inline int pawn_to_pmeshcomponent = 0x318;
-	inline int pawn_to_controller = 0x2c8;
-	inline int meshcomponent_to_bonearray = 0x5b0;
-	inline int meshcomponent_to_componenttoworld = 0x1c0;
+	inline int uworld = 0x12BA7050; // updated
+	inline int uworld_to_pgamestate = 0x160; // updated 
+	inline int gamestate_to_tpplayerstate_array = 0x2a8; // // updated
+	inline int playerstate_to_ppawn = 0x308; // updated (used CachedActor offset)
+	inline int playerstate_to_isabot = 0x29a; // updated
+	inline int playerstate_to_teamid = 0x1211; // updated 
+	inline int pawn_to_pmeshcomponent = 0x318; //updated
+	inline int pawn_to_controller = 0x2c8; // updated (maybe? used GetCameraViewPoint offset)
+	inline int meshcomponent_to_bonearray = 0x5b8;  //updated (maybe?)
+	inline int meshcomponent_to_componenttoworld = 0x1c0; // updated
 	inline int playercontroller_to_rotationinput = 0x520;
 	inline int playercontroller_to_rotationinput2 = 0x810;
 	inline int playercontroller_to_playerstate = 0x298;
-	inline int playercontroller_to_pawn = 0x338;
-	inline int pawn_to_isdying = 0x758;
-	inline int pawn_to_isdbno = 0x982;
+	inline int playercontroller_to_pawn = 0x338; // updated (playerpawn)
+	inline int pawn_to_isdying = 0x758; // updated
+	inline int pawn_to_isdbno = 0x982; // updated (possibly?)
 	inline int pawn_to_isattacking = 0x6987;
-	inline int pawn_to_currentweapon = 0xa68;
-	inline int pawn_to_rootcomponent = 0x198;
-	inline int weapon_to_weapondata = 0x500;
-	inline int weapondata_to_weaponname = 0x40;
-	inline int weaponname_to_buf = 0x28;
-	inline int component_to_velocity = 0x168;
+	inline int pawn_to_currentweapon = 0xa68; //updated 
+	inline int pawn_to_rootcomponent = 0x198; // updated
+	inline int weapon_to_weapondata = 0x500; // updated 
+	inline int weapondata_to_weaponname = 0x40; // updated
+	inline int weaponname_to_buf = 0x28;  // Buffered Weapons? can't find offset
+	inline int component_to_velocity = 0x168; // updated 
 }
 
 namespace cache
